@@ -1,1 +1,94 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+
+  --purple: #9945ff;
+  --green: #14f195;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(153,69,255,.12), transparent 45%),
+              radial-gradient(circle at bottom right, rgba(20,241,149,.10), transparent 40%),
+              var(--background);
+
+  color: var(--foreground);
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg,#9945ff,#14f195);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.glass {
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(18px);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.glow {
+  box-shadow:
+      0 0 40px rgba(153,69,255,.18),
+      0 0 80px rgba(20,241,149,.08);
+}
+
+.container {
+  width:min(1200px,92%);
+  margin:auto;
+}
+
+.fade-up{
+    animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(35px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
