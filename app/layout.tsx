@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SolScan Lite",
-  description: "Premium Solana Wallet Inspector",
+  title: "SolLens",
+  description: "Premium Solana Wallet Analytics",
 };
 
 export default function RootLayout({
