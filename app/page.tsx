@@ -1,4 +1,4 @@
-
+import BackgroundEffects from "@/components/BackgroundEffects";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SearchCard from "@/components/SearchCard";
@@ -7,7 +7,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen relative overflow-hidden">
+
+      <BackgroundEffects />
 
       <Navbar />
 
